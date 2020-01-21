@@ -15,6 +15,9 @@
 		695130D923D693C200729960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 695130D723D693C200729960 /* LaunchScreen.storyboard */; };
 		695130E423D693C200729960 /* QRcoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695130E323D693C200729960 /* QRcoderTests.swift */; };
 		695130EF23D693C200729960 /* QRcoderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695130EE23D693C200729960 /* QRcoderUITests.swift */; };
+		6951310323D69A2400729960 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6951310223D69A2400729960 /* ShareViewController.swift */; };
+		6951310623D69A2400729960 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6951310423D69A2400729960 /* MainInterface.storyboard */; };
+		6951310A23D69A2400729960 /* QRcoderShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6951310023D69A2400729960 /* QRcoderShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +35,28 @@
 			remoteGlobalIDString = 695130C823D693C100729960;
 			remoteInfo = QRcoder;
 		};
+		6951310823D69A2400729960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 695130C123D693C100729960 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 695130FF23D69A2400729960;
+			remoteInfo = QRcoderShare;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6951310E23D69A2400729960 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6951310A23D69A2400729960 /* QRcoderShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		695130C923D693C100729960 /* QRcoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRcoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +73,12 @@
 		695130EA23D693C200729960 /* QRcoderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRcoderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		695130EE23D693C200729960 /* QRcoderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRcoderUITests.swift; sourceTree = "<group>"; };
 		695130F023D693C200729960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6951310023D69A2400729960 /* QRcoderShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QRcoderShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6951310223D69A2400729960 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		6951310523D69A2400729960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6951310723D69A2400729960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6951310F23D6B9B500729960 /* QRcoderShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QRcoderShare.entitlements; sourceTree = "<group>"; };
+		6951311023D6C00100729960 /* QRcoder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QRcoder.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +103,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		695130FD23D69A2400729960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +119,7 @@
 				695130CB23D693C100729960 /* QRcoder */,
 				695130E223D693C200729960 /* QRcoderTests */,
 				695130ED23D693C200729960 /* QRcoderUITests */,
+				6951310123D69A2400729960 /* QRcoderShare */,
 				695130CA23D693C100729960 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +130,7 @@
 				695130C923D693C100729960 /* QRcoder.app */,
 				695130DF23D693C200729960 /* QRcoderTests.xctest */,
 				695130EA23D693C200729960 /* QRcoderUITests.xctest */,
+				6951310023D69A2400729960 /* QRcoderShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +138,7 @@
 		695130CB23D693C100729960 /* QRcoder */ = {
 			isa = PBXGroup;
 			children = (
+				6951311023D6C00100729960 /* QRcoder.entitlements */,
 				695130CC23D693C100729960 /* AppDelegate.swift */,
 				695130CE23D693C100729960 /* SceneDelegate.swift */,
 				695130D023D693C100729960 /* ViewController.swift */,
@@ -128,6 +168,17 @@
 			path = QRcoderUITests;
 			sourceTree = "<group>";
 		};
+		6951310123D69A2400729960 /* QRcoderShare */ = {
+			isa = PBXGroup;
+			children = (
+				6951310F23D6B9B500729960 /* QRcoderShare.entitlements */,
+				6951310223D69A2400729960 /* ShareViewController.swift */,
+				6951310423D69A2400729960 /* MainInterface.storyboard */,
+				6951310723D69A2400729960 /* Info.plist */,
+			);
+			path = QRcoderShare;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +189,12 @@
 				695130C523D693C100729960 /* Sources */,
 				695130C623D693C100729960 /* Frameworks */,
 				695130C723D693C100729960 /* Resources */,
+				6951310E23D69A2400729960 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6951310923D69A2400729960 /* PBXTargetDependency */,
 			);
 			name = QRcoder;
 			productName = QRcoder;
@@ -184,6 +237,23 @@
 			productReference = 695130EA23D693C200729960 /* QRcoderUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		695130FF23D69A2400729960 /* QRcoderShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6951310B23D69A2400729960 /* Build configuration list for PBXNativeTarget "QRcoderShare" */;
+			buildPhases = (
+				695130FC23D69A2400729960 /* Sources */,
+				695130FD23D69A2400729960 /* Frameworks */,
+				695130FE23D69A2400729960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRcoderShare;
+			productName = QRcoderShare;
+			productReference = 6951310023D69A2400729960 /* QRcoderShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +275,9 @@
 						CreatedOnToolsVersion = 11.3.1;
 						TestTargetID = 695130C823D693C100729960;
 					};
+					695130FF23D69A2400729960 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 695130C423D693C100729960 /* Build configuration list for PBXProject "QRcoder" */;
@@ -223,6 +296,7 @@
 				695130C823D693C100729960 /* QRcoder */,
 				695130DE23D693C200729960 /* QRcoderTests */,
 				695130E923D693C200729960 /* QRcoderUITests */,
+				695130FF23D69A2400729960 /* QRcoderShare */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +323,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		695130FE23D69A2400729960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6951310623D69A2400729960 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +363,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		695130FC23D69A2400729960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6951310323D69A2400729960 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +383,11 @@
 			isa = PBXTargetDependency;
 			target = 695130C823D693C100729960 /* QRcoder */;
 			targetProxy = 695130EB23D693C200729960 /* PBXContainerItemProxy */;
+		};
+		6951310923D69A2400729960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 695130FF23D69A2400729960 /* QRcoderShare */;
+			targetProxy = 6951310823D69A2400729960 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -311,6 +406,14 @@
 				695130D823D693C200729960 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6951310423D69A2400729960 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6951310523D69A2400729960 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,7 +536,9 @@
 		695130F423D693C200729960 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QRcoder/QRcoder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DP37SM992;
 				INFOPLIST_FILE = QRcoder/Info.plist;
@@ -444,14 +549,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.higuchiryunosuke.QRcoder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		695130F523D693C200729960 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QRcoder/QRcoder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DP37SM992;
 				INFOPLIST_FILE = QRcoder/Info.plist;
@@ -462,7 +569,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.higuchiryunosuke.QRcoder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -550,6 +657,46 @@
 			};
 			name = Release;
 		};
+		6951310C23D69A2400729960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = QRcoderShare/QRcoderShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DP37SM992;
+				INFOPLIST_FILE = QRcoderShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.higuchiryunosuke.QRcoder.QRcoderShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6951310D23D69A2400729960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = QRcoderShare/QRcoderShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DP37SM992;
+				INFOPLIST_FILE = QRcoderShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.higuchiryunosuke.QRcoder.QRcoderShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -585,6 +732,15 @@
 			buildConfigurations = (
 				695130FA23D693C200729960 /* Debug */,
 				695130FB23D693C200729960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6951310B23D69A2400729960 /* Build configuration list for PBXNativeTarget "QRcoderShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6951310C23D69A2400729960 /* Debug */,
+				6951310D23D69A2400729960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
